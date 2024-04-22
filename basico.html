@@ -781,6 +781,54 @@ snnopy.saludar();
 lolaBunny.sonar();
 lolaBunny.saludar(); */
     
+
+//CLASE 23: Herencia prototípica
+
+/* function Animal(nombre, genero){
+    //Atributos
+    this.nombre = nombre;
+    this.genero = genero;
+}
+
+//Métodos agregados al prototipo de la función constructora
+Animal.prototype.sonar = function(){
+    console.log("Hago sonido porque estoy vivo");
+}
+Animal.prototype.saludar = function(){
+    console.log(`Hola me llamo ${this.nombre}`);
+}
+
+//Herencia prototípica
+function Perro(nombre, genero, tamanio){
+    this.super = Animal;
+    this.super(nombre, genero);
+    this.tamanio;
+}
+//Perro está heredando de animal
+Perro.prototype = new Animal();
+Perro.prototype.constructor = Perro;
+
+//Sobreescritura de métodos del prototipo padre en e hijo
+Perro.prototype.sonar = function(){
+    console.log("Soy un perro y sonido es un ladrido")
+}
+
+Perro.prototype.ladrar = function(){
+    console.log("Guuuuaaaa guuuaaa")
+}
+
+const snnopy = new Perro("Snnopy", "Macho", "Mediano"),
+    lolaBunny = new Animal("LolaBunny", "Hembra");
+
+console.log(snnopy);
+console.log(lolaBunny);
+
+snnopy.sonar();
+snnopy.saludar();
+snnopy.ladrar();
+
+lolaBunny.sonar();
+lolaBunny.saludar(); */
     
     
     
