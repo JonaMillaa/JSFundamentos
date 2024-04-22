@@ -710,6 +710,83 @@ numeros.forEach((el, index)=> console.log(`${el} está en la posición ${index}`
 
 perro.ladrar(); */
 
+// CLASE 22: Prototipos
+
+// POO
+/* 
+CLASES: Model a seguir
+OBJETOS: Es una instancia de una clase 
+ATRIBUTOS: Es una característica o propiedad del objeto (son variable dentro
+de un objeto)
+MÉTODOS: Son las acciones que un objeto puede realizar (son funciones
+dentro de un objeto) 
+*/
+
+/* const animal = {
+    nombre: "Snoopy",
+    sonar(){
+        console.log("Hago sonido porque estoy vivo")
+    }
+}
+
+const animal2 = {
+    nombre: "Lola bunny",
+    sonar(){
+        console.log("Hago sonido porque estoy vivo");
+    }
+}
+console.log(animal);
+console.log(animal2); */
+
+//Función constructura
+/* function Animal(nombre, genero){
+    //Atributos
+    this.nombre = nombre;
+    this.genero = genero;
+    //Métodos
+    this.sonar = function(){
+        console.log("Hago sonido porque estoy vivo");
+    }
+    this.saludar = function(){
+        console.log(`Hola me llamo ${this.nombre}`);
+    }
+} */
+
+/* Función constructora donde asignamos los métodos al prototipo, 
+no a la función como tal */
+/* function Animal(nombre, genero){
+    //Atributos
+    this.nombre = nombre;
+    this.genero = genero;
+}
+
+//Métodos agregados al prototipo de la función constructora
+Animal.prototype.sonar = function(){
+    console.log("Hago sonido porque estoy vivo");
+}
+Animal.prototype.saludar = function(){
+    console.log(`Hola me llamo ${this.nombre}`);
+}
+
+
+const snnopy = new Animal("Snnopy", "Macho"),
+    lolaBunny = new Animal("LolaBunny", "Hembra");
+
+console.log(snnopy);
+console.log(lolaBunny);
+
+snnopy.sonar();
+snnopy.saludar();
+
+lolaBunny.sonar();
+lolaBunny.saludar(); */
+    
+    
+    
+    
+    
+    
+    
     </script>
     
 </body>
